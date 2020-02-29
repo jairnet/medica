@@ -23,11 +23,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '2nxj-omj!os)zg4kti_pe*!0_i!rdj^+$5)$edq$ygd@lp_b@2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # Hosts local and production 
 # https://medica-heippi.herokuapp.com/
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'medica-heippi.herokuapp.com']
+# ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'medica-heippi.herokuapp.com']
+ALLOWED_HOSTS = ['medica-heippi.herokuapp.com']
 
 
 # Application definition
@@ -155,7 +156,6 @@ STATIC_URL = '/static/'
 
 # En produccion
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
-
 MEDIA_URL = '/media/'
 MEDIA_ROOT = 'media'
 
